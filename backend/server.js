@@ -56,6 +56,9 @@ const ensureDefaultAdmin = async () => {
   console.log('Seeded default admin user');
 };
 
+app.get('/', (_req, res) => {
+  res.send('Event Booking API is running');
+});
 
 // ------------------------- AUTH -------------------------
 app.post('/auth/register', async (req, res) => {
