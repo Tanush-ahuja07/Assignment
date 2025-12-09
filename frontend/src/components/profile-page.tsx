@@ -56,14 +56,10 @@ export default function ProfilePage({ user, onLogout, onBrowseEvents }: ProfileP
           </div>
 
           {/* Quick Actions */}
-          <div className="grid grid-cols-2 gap-4 mb-8">
-            <Button className="bg-secondary text-primary hover:bg-secondary/90 py-6 rounded-lg font-semibold">
-              <Calendar className="mr-2 h-5 w-5" />
-              My Bookings
-            </Button>
+          <div className="mb-8">
             <Button
               onClick={onBrowseEvents}
-              className="bg-primary text-white hover:bg-primary/90 py-6 rounded-lg font-semibold"
+              className="w-full bg-primary text-white hover:bg-primary/90 py-6 rounded-lg font-semibold"
             >
               Browse Events
             </Button>
